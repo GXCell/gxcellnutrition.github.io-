@@ -422,6 +422,17 @@ const firebaseConfig = {
 firebaseConfig
 auth.signOut().
 auth.signOut().
+reset-password.html
+# Add changed/new files to Git staging area:
+git add .
+
+# Commit changes with message:
+git commit -m "Add authentication pages and reset password"
+
+# Push to GitHub:
+git push origin main
+
+reset-password.html
 signup.html
 login.html
 logout.html
