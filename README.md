@@ -433,6 +433,7 @@ git commit -m "Add authentication pages and reset password"
 git push origin main
 
 reset-password.html
+var cardElement = elements.create('card');
 signup.html
 login.html
 logout.html
