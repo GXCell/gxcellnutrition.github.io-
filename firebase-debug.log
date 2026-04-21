@@ -1,0 +1,54 @@
+[debug] [2026-04-19T23:48:58.385Z] ----------------------------------------------------------------------
+[debug] [2026-04-19T23:48:58.388Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\roche\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only hosting
+[debug] [2026-04-19T23:48:58.388Z] CLI Version:   15.15.0
+[debug] [2026-04-19T23:48:58.388Z] Platform:      win32
+[debug] [2026-04-19T23:48:58.389Z] Node Version:  v24.15.0
+[debug] [2026-04-19T23:48:58.389Z] Time:          Sun Apr 19 2026 17:48:58 GMT-0600 (Mountain Daylight Time)
+[debug] [2026-04-19T23:48:58.389Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-04-19T23:48:59.731Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-19T23:48:59.731Z] > authorizing via signed-in user (freelancero4hire@gmail.com)
+[debug] [2026-04-19T23:48:59.732Z] [iam] checking project gxcellbackened for permissions ["firebase.projects.get"]
+[debug] [2026-04-19T23:48:59.732Z] Checked if tokens are valid: false, expires at: 1776637009909
+[debug] [2026-04-19T23:48:59.732Z] Checked if tokens are valid: false, expires at: 1776637009909
+[debug] [2026-04-19T23:48:59.733Z] > refreshing access token with scopes: []
+[debug] [2026-04-19T23:48:59.734Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-04-19T23:48:59.734Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-19T23:48:59.861Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-04-19T23:48:59.861Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-04-19T23:48:59.872Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened:testIamPermissions [none]
+[debug] [2026-04-19T23:48:59.872Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened:testIamPermissions  x-goog-user-project=gxcellbackened
+[debug] [2026-04-19T23:48:59.872Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-19T23:49:00.102Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened:testIamPermissions 200
+[debug] [2026-04-19T23:49:00.102Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2026-04-19T23:49:00.104Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.104Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.104Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/gxcellbackened/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2026-04-19T23:49:00.104Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/gxcellbackened/services/cloudresourcemanager.googleapis.com  x-goog-user-project=gxcellbackened
+[debug] [2026-04-19T23:49:00.501Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/gxcellbackened/services/cloudresourcemanager.googleapis.com 200
+[debug] [2026-04-19T23:49:00.501Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/gxcellbackened/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2026-04-19T23:49:00.552Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.552Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.552Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened [none]
+[debug] [2026-04-19T23:49:00.808Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened 200
+[debug] [2026-04-19T23:49:00.808Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/gxcellbackened {"projectNumber":"645406522729","projectId":"gxcellbackened","lifecycleState":"ACTIVE","name":"gxcellbackened     ","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-03-31T11:27:21.311Z"}
+[debug] [2026-04-19T23:49:00.810Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.811Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:00.811Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/gxcellbackened/sites 
+[debug] [2026-04-19T23:49:01.637Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/gxcellbackened/sites 200
+[debug] [2026-04-19T23:49:01.638Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/gxcellbackened/sites {"sites":[{"name":"projects/gxcellbackened/sites/gxcellbackened","defaultUrl":"https://gxcellbackened.web.app","appId":"1:645406522729:web:3838e7b7364a6331cc91f8","type":"DEFAULT_SITE"}]}
+[debug] [2026-04-19T23:49:01.638Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:01.638Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:01.639Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened/webApps/1:645406522729:web:3838e7b7364a6331cc91f8/config [none]
+[debug] [2026-04-19T23:49:02.240Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened/webApps/1:645406522729:web:3838e7b7364a6331cc91f8/config 200
+[debug] [2026-04-19T23:49:02.240Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened/webApps/1:645406522729:web:3838e7b7364a6331cc91f8/config {"projectId":"gxcellbackened","appId":"1:645406522729:web:3838e7b7364a6331cc91f8","storageBucket":"gxcellbackened.firebasestorage.app","apiKey":"AIzaSyBRzts9EVVTSPBxI11DONXVjQu5coEAgcc","authDomain":"gxcellbackened.firebaseapp.com","messagingSenderId":"645406522729","measurementId":"G-5KK2D5WEGH","projectNumber":"645406522729","version":"2"}
+[debug] [2026-04-19T23:49:02.246Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:02.246Z] Checked if tokens are valid: true, expires at: 1776646138861
+[debug] [2026-04-19T23:49:02.246Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened [none]
+[debug] [2026-04-19T23:49:02.449Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened 200
+[debug] [2026-04-19T23:49:02.450Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/gxcellbackened {"projectId":"gxcellbackened","projectNumber":"645406522729","displayName":"gxcellbackened     ","name":"projects/gxcellbackened","resources":{"hostingSite":"gxcellbackened"},"state":"ACTIVE","etag":"1_419f4274-4454-4140-803b-d6f211cdfbde"}
+[info] +  hosting[gxcellbackened]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [19/Apr/2026:23:49:11 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Apr/2026:23:49:11 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0\""}}
+[info] i  hosting: ::1 - - [19/Apr/2026:23:49:11 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Apr/2026:23:49:11 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0\""}}
+[info] i  hosting: ::1 - - [19/Apr/2026:23:49:59 +0000] "GET /signup.html HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Apr/2026:23:49:59 +0000] \"GET /signup.html HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0\""}}
+[info] i  hosting: ::1 - - [19/Apr/2026:23:50:04 +0000] "GET /login.html HTTP/1.1" 200 - "http://localhost:5000/signup.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [19/Apr/2026:23:50:04 +0000] \"GET /login.html HTTP/1.1\" 200 - \"http://localhost:5000/signup.html\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0\""}}

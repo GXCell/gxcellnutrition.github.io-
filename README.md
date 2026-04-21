@@ -1,6 +1,26 @@
-index.html,
-<!DOCTYPE html>
-<html lang="en">
+# G-Xcell Nutrition Website
+
+A GitHub Pages website for G-Xcell Nutrition supplements.
+
+## Pages
+
+- `index.html` — Home page with supplement listings
+- `login.html` — User login (Firebase Auth)
+- `signup.html` — User registration (Firebase Auth)
+- `privacy.html` — Privacy Policy
+
+## Setup
+
+This site uses Firebase Authentication. The Firebase project is `gxcellbackened`.
+
+To deploy to GitHub Pages, push to the `main` branch.
+
+## Deploy
+
+```
+firebase deploy
+```
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign Up - G-Xcell Nutrition</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .signup-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h2 {
+      margin-top: 0;
+      color: #287233;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 1rem 0 0.3rem;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button[type="submit"] {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 0.7rem;
+      background: #287233;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background: #1f5627;
+    }
+    .message {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    .message.error {
+      color: red;
+    }
+    .message.success {
+      color: green;
+    }
+    .login-link {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .login-link a {
+      color: #287233;
+      text-decoration: none;
+    }
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      color: #287233;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create an Account</h2>
+    <form id="signup-form">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required autocomplete="email" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required autocomplete="new-password" minlength="6" />
+
+      <button type="submit">Sign Up</button>
+    </form>
+    <div id="signup-message" class="message" aria-live="polite"></div>
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Log In</a></p>
+    </div>
+    <a class="back-link" href="index.html">&larr; Back to Home</a>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBRzts9EVVTSPBxI11DONXVjQu5coEAgcc",
+      authDomain: "gxcellbackened.firebaseapp.com",
+      projectId: "gxcellbackened",
+      storageBucket: "gxcellbackened.firebasestorage.app",
+      messagingSenderId: "645406522729",
+      appId: "1:645406522729:web:3838e7b7364a6331cc91f8",
+      measurementId: "G-5KK2D5WEGH"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    const signupForm = document.getElementById('signup-form');
+    const signupMessage = document.getElementById('signup-message');
+
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      signupMessage.textContent = '';
+      signupMessage.className = 'message';
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      auth.createUserWithEmailAndPassword(email, password)
+        .then(() => {
+          signupMessage.className = 'message success';
+          signupMessage.textContent = 'Account created successfully! Redirecting to login...';
+          signupForm.reset();
+          setTimeout(() => { location.href = 'login.html'; }, 2000);
+        })
+        .catch((error) => {
+          signupMessage.className = 'message error';
+          signupMessage.textContent = error.message;
+        });
+    });
+  </script>
+</body>
+</html>
