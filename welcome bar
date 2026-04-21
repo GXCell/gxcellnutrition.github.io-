@@ -1,0 +1,105 @@
+  <div class="page-header">
+      <div class="brand-name">G-<span>XCell</span> Nutrition</div>
+      <div class="badge">🔐 Verified Healthcare Professional</div>
+      <div class="page-title">Doctor <span>Pricing</span></div>
+      <div class="page-sub">Exclusive wholesale rates for licensed medical professionals.<br/>All prices below are your verified professional rates.</div>
+    </div>
+
+    <div class="welcome-bar">
+      <div class="welcome-text">Welcome back, <strong>Dr. [Name]</strong> — License verified ✓</div>
+      <button class="btn-logout" onclick="window.location.href='/doctor-login'">Sign Out</button>
+    </div>
+
+    <div class="section-label">📦 Full Product Lineup — Professional Rates</div>
+
+    <div class="products-grid">
+
+      <div class="product-card featured">
+        <div class="product-tag tag-gold">⭐ Fan Favorite</div>
+        <div class="product-name">Mi-Begon</div>
+        <div class="product-desc">Fast-acting migraine relief. Clinically formulated for rapid onset. Your patients' #1 requested product.</div>
+        <div class="price-row">
+          <div class="price-pro">$24.99</div>
+          <div class="price-retail">$44.99 retail</div>
+          <div class="price-save">Save 44%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-blue">Daily Wellness</div>
+        <div class="product-name">DailyOvation Men</div>
+        <div class="product-desc">Complete daily multivitamin formulated for men's health, energy, and vitality.</div>
+        <div class="price-row">
+          <div class="price-pro">$18.99</div>
+          <div class="price-retail">$34.99 retail</div>
+          <div class="price-save">Save 46%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-blue">Daily Wellness</div>
+        <div class="product-name">DailyOvation Women</div>
+        <div class="product-desc">Complete daily multivitamin formulated for women's health, hormonal balance, and energy.</div>
+        <div class="price-row">
+          <div class="price-pro">$18.99</div>
+          <div class="price-retail">$34.99 retail</div>
+          <div class="price-save">Save 46%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-green">Brain Health</div>
+        <div class="product-name">NeurOvation</div>
+        <div class="product-desc">Advanced cognitive support formula. Focus, memory, and mental clarity for your patients.</div>
+        <div class="price-row">
+          <div class="price-pro">$22.99</div>
+          <div class="price-retail">$39.99 retail</div>
+          <div class="price-save">Save 43%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-blue">Minerals</div>
+        <div class="product-name">Mag Supreme</div>
+        <div class="product-desc">High-absorption magnesium complex. Supports muscle function, sleep, and nervous system health.</div>
+        <div class="price-row">
+          <div class="price-pro">$16.99</div>
+          <div class="price-retail">$29.99 retail</div>
+          <div class="price-save">Save 43%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-green">Recovery</div>
+        <div class="product-name">RestorOvation</div>
+        <div class="product-desc">Comprehensive recovery and restoration formula. Ideal for post-procedure and general wellness.</div>
+        <div class="price-row">
+          <div class="price-pro">$20.99</div>
+          <div class="price-retail">$37.99 retail</div>
+          <div class="price-save">Save 45%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-tag tag-gold">Immunity</div>
+        <div class="product-name">Vitamin D3 + K2</div>
+        <div class="product-desc">Synergistic D3 and K2 formula for bone density, immune function, and cardiovascular health.</div>
+        <div class="price-row">
+          <div class="price-pro">$14.99</div>
+          <div class="price-retail">$26.99 retail</div>
+          <div class="price-save">Save 44%</div>
+        </div>
+        <button class="btn-order">Order Now</button>
+      </div>
+
+    </div>
+
+    <div class="info-strip">
+      <div class="info-item">
+        <div class="info-
