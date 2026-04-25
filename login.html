@@ -143,7 +143,16 @@
         })
         .catch((error) => {
           loginMessage.className = 'message error';
-          loginMessage.textContent = error.message;
+          const friendlyMessages = {
+            'auth/user-not-found': 'No account found with that email address.',
+            'auth/wrong-password': 'Incorrect password. Please try again.',
+            'auth/invalid-email': 'Please enter a valid email address.',
+            'auth/user-disabled': 'This account has been disabled. Please contact support.',
+            'auth/too-many-requests': 'Too many failed attempts. Please try again later.',
+            'auth/network-request-failed': 'Network error. Please check your connection.',
+            'auth/invalid-credential': 'Invalid email or password. Please try again.'
+          };
+          loginMessage.textContent = friendlyMessages[error.code] || 'Login failed. Please check your credentials and try again.';
         });
     });
   </script>
